@@ -13,9 +13,10 @@ import {
   toggleTodoActionCreator,
   deleteTodoActionCreator,
   selectTodoActionCreator,
-} from '../redux-core';
-import { RootState } from '../redux-core';
-import { AppDispatch } from '../redux-core';
+} from '../redux-toolkit';
+
+import { RootState } from '../redux-toolkit';
+import { AppDispatch } from '../redux-toolkit';
 const App = function() {
   const dispatch = useDispatch<AppDispatch>();
   const todos = useSelector((state: RootState) => state.todos);
